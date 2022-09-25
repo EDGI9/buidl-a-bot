@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.png">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta name="application-name" content="EdgarDias" />
+    <meta name="author" content="Edgar Dias" />
+    <meta name="keywords" content="EdgarDias, Edgar, Dias, build-a-robot, front-end" />
+    <meta name="title" property="og:title" content="Edgar Dias - Build-a-Bot" />
+    <meta property="og:type" content="Website" />
+    <meta name="image" property="og:image" content="<%= BASE_URL %>website_preview.jpg" />
+    <meta property="og:site_name" content="Build-a-Robot" />
+    <meta name="description" property="og:description"
+      content="Hi, I'm Edgar and this is my Build-a-Robot project." />
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+    </noscript>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
