@@ -31,7 +31,7 @@
     <v-footer>
       <v-container>
         <v-layout column align-center justify-center>
-          <v-flex>&copy; Edgar Dias - 2019</v-flex>
+          <v-flex>&copy; Edgar Dias - 2019</v-flex>.
         </v-layout>
       </v-container>
     </v-footer>
