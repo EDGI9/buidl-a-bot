@@ -1,6 +1,8 @@
 # Build-a-bot
 A small app that allows you to create a bot and visualise it at the end 
 
+# Demo
+[Build a Bot](https://edgi9.github.io/build-a-bot/)
 
 ## Project setup
 ```
