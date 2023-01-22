@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import RobotPreview from "@/components/RobotPreview.vue";
+import RobotPreview from "@/components/RobotPreview/RobotPreview.vue";
 import { mapGetters } from "vuex";
 
 export default {

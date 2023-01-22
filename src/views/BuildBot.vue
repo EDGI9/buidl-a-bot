@@ -24,9 +24,9 @@
 </template>
 
 <script>
-import RobotBuilder from "@/components/RobotBuilder.vue";
-import CollapsableSection from "@/components/CollapsableSection.vue";
-import RobotPreview from "@/components/RobotPreview.vue";
+import RobotBuilder from "@/components/RobotBuilder/RobotBuilder.vue";
+import CollapsableSection from "@/components/CollapsableSection/CollapsableSection.vue";
+import RobotPreview from "@/components/RobotPreview/RobotPreview.vue";
 import { mapGetters } from "vuex";
 
 export default {
