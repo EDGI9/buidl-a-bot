@@ -23,7 +23,7 @@ jobs:
         node-version: 16
         
     - name: Install NPM packages
-      run: npm ci
+      run: npm i
     
     - name: Run test script
       run: npm run test
