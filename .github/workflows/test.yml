@@ -14,13 +14,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout repo
       uses: actions/checkout@v2
-    
-    - name: Install Node.js
+
+    - name: Setup Node
       uses: actions/setup-node@v1
       with:
-        node-version: 15.x
+        node-version: 16
         
     - name: Install NPM packages
       run: npm ci
