@@ -12,7 +12,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test": "vue-cli-service test:unit",
-    "test:dev": "vue-cli-service test:unit --watch --coverage",
+    "test:dev": "vue-cli-service test:unit --watch --coverage"
   },
   "dependencies": {
     "core-js": "^3.6.5",
