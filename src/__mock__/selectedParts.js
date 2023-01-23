@@ -43,4 +43,4 @@ export default {
     type: "bases",
     cost: 895
   }
-}
+};

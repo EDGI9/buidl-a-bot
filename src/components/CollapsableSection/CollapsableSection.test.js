@@ -3,13 +3,13 @@ import CollapsableSection from "./CollapsableSection";
 
 describe("CollapsableSection.vue", () => {
   const testHtml = "<div>My test content</div>";
-
+  let wrapper;
   it("Component is rendered", () => {
-    const wrapper = shallowMount(CollapsableSection)
+    wrapper = shallowMount(CollapsableSection);
   });
- 
+
   it("Component renders content in slot", () => {
-    const wrapper = shallowMount(CollapsableSection, {
+    wrapper = shallowMount(CollapsableSection, {
       slots: {
         default: testHtml
       }

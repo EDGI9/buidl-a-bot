@@ -1,16 +1,17 @@
-import { shallowMount, createLocalVue  } from "@vue/test-utils";
+import { shallowMount, createLocalVue } from "@vue/test-utils";
 import RobotBuilder from "./RobotBuilder";
-import Vuex from 'vuex'
+import Vuex from "vuex";
 import RobotParts from "../../__mock__/robotParts";
 
-const localVue = createLocalVue()
+const localVue = createLocalVue();
 
-localVue.use(Vuex)
+localVue.use(Vuex);
 
 describe("RobotBuilder.vue", () => {
   let actions;
   let getters;
   let store;
+  let wrapper;
 
   beforeEach(() => {
     actions = {
@@ -18,7 +19,7 @@ describe("RobotBuilder.vue", () => {
       UPDATE_TORSO: jest.fn(),
       UPDATE_LEFT_ARM: jest.fn(),
       UPDATE_RIGHT_ARM: jest.fn(),
-      UPDATE_BASE: jest.fn(),
+      UPDATE_BASE: jest.fn()
     };
     getters = {
       PARTS: () => RobotParts
@@ -30,15 +31,15 @@ describe("RobotBuilder.vue", () => {
           namespaced: true,
           getters,
           actions
-        },
-      },
+        }
+      }
     });
   });
 
   it("Component is rendered", () => {
-    const wrapper = shallowMount(RobotBuilder, {
+    wrapper = shallowMount(RobotBuilder, {
       store,
-      localVue 
-    })
+      localVue
+    });
   });
 });

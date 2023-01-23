@@ -63,7 +63,9 @@ export default {
       return this.parts[this.selectedPartIndex];
     },
     flexDirection() {
-      return this.orientation == "vertical" ? "flex-column" : "c-part-selector--horizontal flex-row";
+      return this.orientation == "vertical"
+        ? "flex-column"
+        : "c-part-selector--horizontal flex-row";
     },
     buttonHeight() {
       return this.orientation == "horizontal" ? "100%" : "";

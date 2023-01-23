@@ -3,44 +3,44 @@ import PartSelector from "./PartSelector";
 import RobotParts from "@/__mock__/robotParts.js";
 
 describe("PartSelector.vue", () => {
+  let wrapper;
   it("Component is rendered", () => {
-    const wrapper = shallowMount(PartSelector, {
+    wrapper = shallowMount(PartSelector, {
       propsData: {
         parts: RobotParts.heads,
-        orientation: 'vertical'
+        orientation: "vertical"
       }
-    })
+    });
   });
 
-   it("Is horizontal", () => {
-    const wrapper = shallowMount(PartSelector, {
+  it("Is horizontal", () => {
+    wrapper = shallowMount(PartSelector, {
       propsData: {
-        parts: RobotParts.heads,
+        parts: RobotParts.heads
       }
-    })
-    expect(wrapper.classes('c-part-selector--horizontal')).toBe(true)
-    expect(wrapper.classes('flex-row')).toBe(true)
+    });
+    expect(wrapper.classes("c-part-selector--horizontal")).toBe(true);
+    expect(wrapper.classes("flex-row")).toBe(true);
   });
 
   it("Is vertical", () => {
-    const wrapper = shallowMount(PartSelector, {
+    wrapper = shallowMount(PartSelector, {
       propsData: {
         parts: RobotParts.heads,
-        orientation: 'vertical'
+        orientation: "vertical"
       }
-    })
-    expect(wrapper.classes('flex-column')).toBe(true)
+    });
+    expect(wrapper.classes("flex-column")).toBe(true);
   });
 
   it("Can set different position", () => {
-    const wrapper = shallowMount(PartSelector, {
+    wrapper = shallowMount(PartSelector, {
       propsData: {
         parts: RobotParts.heads,
-        orientation: 'vertical',
-        position: 'left'
+        orientation: "vertical",
+        position: "left"
       }
-    })
-    expect(wrapper.get('v-img').classes()).toContain('left')
-  }); 
-
+    });
+    expect(wrapper.get("v-img").classes()).toContain("left");
+  });
 });

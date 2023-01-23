@@ -1,21 +1,24 @@
 import { shallowMount } from "@vue/test-utils";
 import RobotPreview from "./RobotPreview";
-import SelectedParts from "@/__mock__/selectedParts.js"
+import SelectedParts from "@/__mock__/selectedParts.js";
 
 describe("RobotPreview.vue", () => {
-
+  let wrapper;
   it("Component is rendered", () => {
-    const wrapper = shallowMount(RobotPreview, { propsData: {
-      'robot-data': SelectedParts
-    }})
+    wrapper = shallowMount(RobotPreview, {
+      propsData: {
+        "robot-data": SelectedParts
+      }
+    });
   });
 
   it("Shows small preview", () => {
-    const wrapper = shallowMount(RobotPreview, { propsData: {
-      'robot-data': SelectedParts,
-      'is-small': true
-    }})
-    expect(wrapper.classes()).toContain('c-robot-preview--small')
+    wrapper = shallowMount(RobotPreview, {
+      propsData: {
+        "robot-data": SelectedParts,
+        "is-small": true
+      }
+    });
+    expect(wrapper.classes()).toContain("c-robot-preview--small");
   });
-  
 });
