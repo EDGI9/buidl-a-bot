@@ -1,4 +1,4 @@
 module.exports = {
-  publicPath: '/build-a-bot/',
+  publicPath: "/build-a-bot/",
   transpileDependencies: ["vuetify"]
 };

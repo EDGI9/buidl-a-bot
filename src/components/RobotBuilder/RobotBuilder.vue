@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import PartSelector from "./PartSelector.vue";
+import PartSelector from "@/components/PartSelector/PartSelector.vue";
 import { mapGetters, mapActions } from "vuex";
 
 export default {
